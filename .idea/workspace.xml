@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bde100-16f5-4037-9bef-32914af191d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Classe/Search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/SearchType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,8 +189,16 @@
       <workItem from="1610710672959" duration="975000" />
       <workItem from="1610723602234" duration="10894000" />
       <workItem from="1610788512304" duration="481000" />
-      <workItem from="1610799918274" duration="627000" />
+      <workItem from="1610799918274" duration="8064000" />
     </task>
+    <task id="LOCAL-00001" summary="commit style and config">
+      <created>1610800697437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610800697437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,51 +207,9 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610293771573">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610293771573" />
-    <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609925407180">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="447" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1609925407180" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608230298574">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1608230298574" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609876532137">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1609876532137" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610293675031">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610293675031" />
-    <state x="432" y="87" key="NewPhpClassDialog" timestamp="1608318816775">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="432" y="87" key="NewPhpClassDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1608318816775" />
-    <state x="497" y="84" key="RollbackChangesDialog" timestamp="1610292534626">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="497" y="84" key="RollbackChangesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610292534626" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610788967948">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610788967948" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610788937636">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610788937636" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1610292666236">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610292666236" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610292485746">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1610292485746" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit style and config" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit style and config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
