@@ -3,7 +3,7 @@
 {% block title %}{{ product.name }} - La Boutique Francaise{% endblock %}
 
 {% block content %}
-    <div class="row">
+    <div class="row detail-product">
         <div class="col-md-5">
             <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid">
         </div>
@@ -15,7 +15,7 @@
             <p>
                 {{ product.description }}
             </p>
-            <a href="" class="btn btn-primary">Ajouter au panier</a>
+            <a href="{{ path('add_to_cart',{'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
             <a href="{{ path('products') }}" class="btn btn-primary">Retour</a>
         </div>
     </div>
