@@ -30,6 +30,7 @@ class ProductCrudController extends AbstractCrudController
                 ->setRequired(false),
             TextField::new('subtitle'),
             TextareaField::new('description'),
+            BooleanField::new('isBest'),
             // setCurrency nous permet de définir la monnaie avec lequel on travaille.
             MoneyField::new('price')->setCurrency('EUR'),
             AssociationField::new('category')

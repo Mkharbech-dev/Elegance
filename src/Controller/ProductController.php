@@ -53,12 +53,14 @@ class ProductController extends AbstractController
         //dd($id);
         // on va chercher les données de produit à l'aide de fonction >findOneBySlug de getRepository.
         $product = $this->salah->getRepository(product::class)->find($id);
+        $products = $this->salah->getRepository(Product::class)->findByIsBest(1);
         if(!$product){
             return  $this->redirectToRoute('products');
         }
         return $this->render('product/show.html.twig',[
             //on passe une variable 'products' dans notre class productController pour récuperer les produits.
             'product' => $product,
+            'products'=> $products
         ]);
     }
 }

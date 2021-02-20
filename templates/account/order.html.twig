@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes commandes - Elégance{% endblock %}
+
+{% block content %}
+    <h1>Mes commandes</h1>
+    c'est dans cet espace que vous allez pouvoir gérer toutes vos commandes <br>
+    <a href="{{ path('account') }}">Retour</a>
+    <hr>
+    {% if app.user.orders|length == 0 %}
+        <p class="text-center">
+            Vous n'avez pas encore passé de commandes sur la boutique  Elégance </p>
+    {% else%}
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for order in app.user.orders %}
+                {{ dump(order) }}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    {% endif %}
+{% endblock %}
