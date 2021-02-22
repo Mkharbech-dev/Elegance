@@ -6,29 +6,31 @@
     <h1>Mes commandes</h1>
     c'est dans cet espace que vous allez pouvoir gérer toutes vos commandes <br>
     <a href="{{ path('account') }}">Retour</a>
-    <hr>
-    {% if app.user.orders|length == 0 %}
+
+    {% if orders|length == 0 %}
+        <hr>
         <p class="text-center">
             Vous n'avez pas encore passé de commandes sur la boutique  Elégance </p>
     {% else%}
 
-        <table class="table">
+        <table class="table mt-4">
             <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Réference</th>
+                <th scope="col">Passé le</th>
+                <th scope="col">produits</th>
+                <th scope="col">Total</th>
+                <th scope="col">Total</th>
             </tr>
             </thead>
             <tbody>
-            {% for order in app.user.orders %}
-                {{ dump(order) }}
+            {% for item in orders %}
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td><span class="badge badge-secondary">{{ item.reference }}</span></td>
+                    <td>{{ item.createdAt|date('d/m/Y') }}</td>
+                    <td>{{ item.orderDetails|length }}</td>
+                    <td>{{((item.carrierPrice + item.getTotal)/100)|number_format(2,',','.')}} €</td>
+                    <td class="text-right"><a href="">Voir ma commande</a></td>
                 </tr>
             {% endfor %}
             </tbody>

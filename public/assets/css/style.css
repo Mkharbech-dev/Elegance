@@ -66,3 +66,11 @@ body{
     padding: 20px;
     margin-top: 22px ;
 }
+.cancel-empty{
+    background-color: #fed700;
+    text-align: center;
+}
+.order-success{
+    background-color: #43E56E;
+    text-align: center;
+}

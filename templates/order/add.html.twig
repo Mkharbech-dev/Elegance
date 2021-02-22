@@ -19,7 +19,7 @@
             <div class="form-check">
                 {{ carrier.name }}<br>
                 {{ carrier.description }}<br>
-                {{ carrier.price|number_format(2,',','.')}} €
+                {{ (carrier.price/100)|number_format(2,',','.')}} €
             </div>
         </div>
         <div class="col-md-6">
@@ -52,10 +52,10 @@
             <hr>
 
             <strong>Sous-Total :</strong> {{ (total/100)|number_format(2,',','.')}} € <br>
-            <strong>Livraison :</strong> {{ (carrier.price)|number_format(2,',','.')}} €
+            <strong>Livraison :</strong> {{ (carrier.price/100)|number_format(2,',','.')}} €
             <hr>
-            <strong>Total : </strong> {{ ((total/100)+carrier.price)|number_format(2,',','.')}} €
-            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer {{ ((total/100)+carrier.price)|number_format(2,',','.')}} €</a>
+            <strong>Total : </strong> {{ ((total/100)+(carrier.price)/100)|number_format(2,',','.')}} €
+            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer {{ ((total/100)+(carrier.price)/100)|number_format(2,',','.')}} €</a>
         </div>
     </div>
 {% endblock %}
@@ -67,17 +67,18 @@
         var stripe = Stripe("pk_test_51IMAZxI0fn416xbWY3Em2GpM1GwlVR3hTrkjp66bu8npNdkoAuufyWGmE1iIBwiRDXmrDKxwvYcjJu5Eep19SwAL00jlykwoh0");
         var checkoutButton = document.getElementById("checkout-button");
         checkoutButton.addEventListener("click", function () {
-            fetch("/commande/create-session", {
+            fetch("/commande/create-session/{{ reference }}", {
                 method: "POST",
             })
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (session) {
-
-                        return stripe.redirectToCheckout({ sessionId: session.id });
-
-
+                        if(session.error == 'order'){
+                            window.location.replace('{{path('order') }}');
+                        }else{
+                            return stripe.redirectToCheckout({ sessionId: session.id });
+                        }
                 })
                 .then(function (result) {
                     // If redirectToCheckout fails due to a browser or network

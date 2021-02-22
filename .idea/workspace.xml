@@ -5,46 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bde100-16f5-4037-9bef-32914af191d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210209194609.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/caftan-2019.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/caftan-prestige.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/caftan10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/CarrierCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Carrier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CarrierRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/address_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/order.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/order/add.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/product/detail_product.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5a671de-7887-4279-a3a1-2e0a0c785bc7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5a671de-7887-4279-a3a1-2e0a0c785bc7/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laboutiquefrancaise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laboutiquefrancaise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/echarpe1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classe/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classe/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CarrierCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/CarrierCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StripeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StripeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Carrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Carrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/OrderDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/order.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/order.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order/add.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +152,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -246,6 +220,10 @@
       <workItem from="1613038207449" duration="1249000" />
       <workItem from="1613141491331" duration="32353000" />
       <workItem from="1613390399258" duration="63376000" />
+      <workItem from="1613846015409" duration="391000" />
+      <workItem from="1613916655702" duration="1939000" />
+      <workItem from="1613987348356" duration="268000" />
+      <workItem from="1613987649833" duration="19258000" />
     </task>
     <task id="LOCAL-00001" summary="commit style and config">
       <created>1610800697437</created>
