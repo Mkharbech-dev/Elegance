@@ -986,19 +986,19 @@ SELECT|sys.sys_config
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="282" parent="239" name="is_paid">
+    <column id="282" parent="239" name="reference">
       <Position>7</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="283" parent="239" name="reference">
+    <column id="283" parent="239" name="stripe_session_id">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="284" parent="239" name="stripe_session_id">
+    <column id="284" parent="239" name="state">
       <Position>9</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
     <index id="285" parent="239" name="IDX_F5299398A76ED395">
       <ColNames>user_id</ColNames>

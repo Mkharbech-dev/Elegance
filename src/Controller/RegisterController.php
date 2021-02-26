@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Classe\Mail;
 use App\Entity\User;
 use App\Form\RegisterType;
 use Doctrine\ORM\EntityManagerInterface;
@@ -34,15 +35,22 @@ class RegisterController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()){
             // l'objet $user va injecter toutes les données saisies par $form  dans la BDD.
             $user=$form->getData();
-            //dd($user);
-            // on encode notre password à l'aide dela méthode encodePassword.
-            $password=$encoder->encodePassword($user,$user->getPassword()) ;
-            //dd($password);
-            $user-> setPassword($password);
-            $this->entityManager->persist($user);
-            $this->entityManager->flush();
-            $notification = "vous etes bien inscrit(e).";
-
+            //je vérifie si l'utilisateur n'est pas deja existant dans notre base de donnée.
+            $search_eamil = $this->entityManager->getRepository(User::class)->findOneByEmail($user->getEmail());
+            if(!$search_eamil){
+              // on encode notre password à l'aide dela méthode encodePassword.
+              $password=$encoder->encodePassword($user,$user->getPassword()) ;
+              //dd($password);
+              $user-> setPassword($password);
+              $this->entityManager->persist($user);
+              $this->entityManager->flush();
+              $mail = new Mail();
+              $content = "Bonjour ".$user->getFirstname()."<br/>Bienvenue sur le premier site didié aux amateurx de caftan marocain, et vous pouvez dès maintenant profiter de notre collection de caftan 100% made in morocco.<br/>";
+              $mail->send($user->getEmail(),$user->getFirstname(),'Bienvenue sur le site de Elégance',$content);
+              $notification = "vous etes bien inscrit(e), vous pouvez dès à présent vous connecter à votre compte.";
+            }else{
+              $notification = "L'email que vous avez renseigné existe déja.";
+            }
         }
         return $this->render('register/index.html.twig', [
             'form' => $form->createView(),

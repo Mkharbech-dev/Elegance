@@ -9,7 +9,7 @@
 
     {% if orders|length == 0 %}
         <hr>
-        <p class="text-center">
+        <p class="text-center cart-empty">
             Vous n'avez pas encore passé de commandes sur la boutique  Elégance </p>
     {% else%}
 
@@ -17,6 +17,7 @@
             <thead>
             <tr>
                 <th scope="col">Réference</th>
+                <th scope="col">Statut</th>
                 <th scope="col">Passé le</th>
                 <th scope="col">produits</th>
                 <th scope="col">Total</th>
@@ -27,10 +28,19 @@
             {% for item in orders %}
                 <tr>
                     <td><span class="badge badge-secondary">{{ item.reference }}</span></td>
+                    <td>
+                        {% if item.state == 1 %}
+                            Paiement accepté
+                        {% elseif item.state == 2 %}
+                            Préparation en cours
+                        {% elseif item.state == 3 %}
+                            Livraison en cours
+                        {% endif %}
+                    </td>
                     <td>{{ item.createdAt|date('d/m/Y') }}</td>
                     <td>{{ item.orderDetails|length }}</td>
                     <td>{{((item.carrierPrice + item.getTotal)/100)|number_format(2,',','.')}} €</td>
-                    <td class="text-right"><a href="">Voir ma commande</a></td>
+                    <td class="text-right"><a href="{{ path('account_order_show', {'reference': item.reference}) }}">Voir ma commande</a></td>
                 </tr>
             {% endfor %}
             </tbody>

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Classe\Mail;
 use App\Entity\Header;
 use App\Entity\Product;
 use Doctrine\ORM\EntityManagerInterface;
@@ -21,6 +22,7 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
+
         $products = $this->entityManager->getRepository(Product::class)->findByIsBest(1);
         $headers =  $this->entityManager->getRepository(Header::class)->findAll();
         //dd($products);

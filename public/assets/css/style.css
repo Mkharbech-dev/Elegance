@@ -1,8 +1,12 @@
 body{
     position: relative;
+    font-family: Georgia, serif;
 }
 .navbar-item-custom, .navbar-item-custom a {
     color:#fff;
+}
+.carousel-caption {
+    margin-bottom: 150px;
 }
 .footer-custom{
     text-align: center;
@@ -12,6 +16,7 @@ body{
     background-color: #dfeaff;
     padding-top: 5px;
     margin-top: 350px;
+    font-family: cursive;
 }
 .product-item h5 {
     text-transform: uppercase;
@@ -73,4 +78,24 @@ body{
 .order-success{
     background-color: #43E56E;
     text-align: center;
+}
+.action-updateDelivery{
+    margin-right: 25px;
+}
+.ref{
+    color: #fe8300;
+}
+.container h3{
+    color: #4b6584;
+    font-size: 30px;
+}
+.account-item{
+    background-color: #f1f2f6;
+    padding: 70px ;
+}
+.account-item a{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #4b6584;
+    font-weight: bold;
 }
