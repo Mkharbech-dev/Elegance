@@ -1,6 +1,13 @@
 body{
     position: relative;
     font-family: Georgia, serif;
+    background-color: black;
+}
+main{
+    /*background-color: black;*/
+    padding-bottom: 150px;
+    /*color: #C1BEB9;*/
+    color: black;
 }
 .navbar-item-custom, .navbar-item-custom a {
     color:#fff;
@@ -15,7 +22,6 @@ body{
     width: 100%;
     background-color: #dfeaff;
     padding-top: 5px;
-    margin-top: 350px;
     font-family: cursive;
 }
 .product-item h5 {
@@ -33,6 +39,11 @@ body{
 .product-item .product-price {
     font-size: 14px;
     font-weight: bold;
+}
+.product-price{
+    color: #FF7A33;
+    background-color: black;
+    padding: 2px 3px 2px 3px ;
 }
 .product-container {
     margin-bottom: 125px;
